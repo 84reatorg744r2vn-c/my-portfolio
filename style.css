@@ -1,0 +1,270 @@
+
+/* BASIC SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: #ffffff;
+}
+
+/* GOLD COLOR */
+
+:root {
+    --gold: #d4af37;
+    --light-gold: #f5df91;
+    --black: #080808;
+}
+
+/* NAVIGATION */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #111111;
+    border-bottom: 1px solid #493c1c;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* HOME SECTION */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background:
+    radial-gradient(ellipse at center,
+    #30240e 0%,
+    #111111 45%,
+    #080808 100%);
+}
+
+.welcome,
+.small-title {
+    color: var(--gold);
+    letter-spacing: 5px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span,
+.section h2 span {
+    color: var(--gold);
+}
+
+.hero h2 {
+    color: #dddddd;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 550px;
+    line-height: 1.8;
+    color: #aaaaaa;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #080808;
+    background: linear-gradient(
+        135deg,
+        #f5df91,
+        #d4af37,
+        #a67c20
+    );
+    padding: 15px 32px;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 25px #d4af3766;
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 100px 10%;
+    text-align: center;
+    border-bottom: 1px solid #282216;
+}
+
+.section h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.description {
+    max-width: 700px;
+    margin: auto;
+    color: #aaaaaa;
+    line-height: 2;
+    font-size: 16px;
+}
+
+/* SKILLS AND PROJECT CARDS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #151515;
+    border: 1px solid #493c1c;
+    padding: 35px 25px;
+    width: 260px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card h3 {
+    color: var(--gold);
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    box-shadow: 0 10px 30px #d4af3722;
+}
+
+/* CONTACT */
+
+#contact .btn {
+    margin-top: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 15px;
+    text-align: center;
+    background: #111111;
+    color: #999999;
+    line-height: 2;
+    font-size: 13px;
+}
+
+footer span {
+    color: var(--gold);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .section {
+        padding: 70px 20px;
+    }
+
+    .section h2 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+.profile-pic {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center 25%;
+    border-radius: 50%;
+    border: 5px solid #D4AF37;
+    box-shadow: 0 0 25px #D4AF37;
+    display: block;
+    margin: 30px auto;
+}
